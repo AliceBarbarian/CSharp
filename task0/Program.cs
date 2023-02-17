@@ -37,7 +37,7 @@ else
 
 3 -> Среда
 
-5 -> Пятница */
+5 -> Пятница
 
 Console.WriteLine("Введите число от 1 до 7: ");
         int num = int.Parse(Console.ReadLine()!);
@@ -69,4 +69,3 @@ Console.WriteLine("Введите число от 1 до 7: ");
                 Console.WriteLine("Ошибка. Пожалуйста, введите число от 1 до 7.");
                 break;
              }; */
-
