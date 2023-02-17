@@ -13,7 +13,7 @@ if (input.Length == 3){
     int lastDigit = number % 10;
     Console.WriteLine($"Последняя цифра : {lastDigit}");
 }
-else (
+else {
     Console.WriteLine("Ошибка! Введите трехзначное число.");
-)
-
+};
+   
