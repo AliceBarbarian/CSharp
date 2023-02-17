@@ -7,7 +7,7 @@
 Console.WriteLine("Введите положительное число : ");
 int number = int.Parse(Console.ReadLine()!);
 if (number < 0){
-    ConsoleWriteLine("Ошибка! Введите положительное число.");
+    Console.WriteLine("Ошибка! Введите положительное число.");
 }
 else {
     for (int i = -number; i <= number; i++){
