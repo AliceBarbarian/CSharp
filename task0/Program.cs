@@ -4,10 +4,9 @@
 Например:
 4 -> 16
 -3 -> 9
--7 -> 49 
+-7 -> 49 */
 
 Console.Write("Введите чиcло: ");
 int number = int.Parse(Console.ReadLine()!);
 int sqr = number * number;
-Console.WriteLine("Квадрат числа " + number + " равен " + sqr); */
-
+Console.WriteLine("Квадрат числа " + number + " равен " + sqr); 
