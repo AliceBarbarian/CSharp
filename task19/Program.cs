@@ -18,7 +18,7 @@ class Program
     static void Main(string[] args)
     {
         Console.Write("Введите пятизначное число: ");
-        int num = int.Parse(Console.ReadLine());
+        int num = int.Parse(Console.ReadLine()!);
 
         if (num < 10000 || num > 99999)
         {
