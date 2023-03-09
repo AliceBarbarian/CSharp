@@ -14,23 +14,26 @@ class Program
 {
     static void Main(string[] args)
     {
+        // Узнаю длину и ширину
         Console.WriteLine("Введиите значения длины и ширины массива:");
         int num1 = int.Parse(Console.ReadLine()!);
         int num2 = int.Parse(Console.ReadLine()!);
 
-        int[,] myArray = new int[num1, num2];
+        // Создаю массив
+        double[,] myArray = new double[num1, num2];
 
         Random random = new Random();
 
+        // Закладываю в массив значения
         for (int i = 0; i < myArray.GetLength(0); i++)
         {
             for (int j = 0; j < myArray.GetLength(1); j++)
             {
-                myArray[i, j] = random.Next(100);
+                myArray[i, j] = Math.Round(random.Next(-100,100) * 0.1, 1);
             }
         }
 
-
+        // Вывожу массив
         for (int x = 0; x < myArray.GetLength(0); x++)
         {
             for (int y = 0; y < myArray.GetLength(1); y++)
@@ -40,5 +43,5 @@ class Program
         Console.WriteLine();
         }
     }
-    
+
 }
